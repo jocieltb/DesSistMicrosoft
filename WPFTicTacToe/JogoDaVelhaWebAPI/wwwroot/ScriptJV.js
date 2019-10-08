@@ -10,6 +10,7 @@ var Tabuleiro;
             };
             xhttp.open("GET", "/api/JogoDaVelha/" + Tabuleiro.jogadorAtual + "/" + posX + "/" + posY, true);
             xhttp.send();
+            document.getElementById("posX" + "posY").innerText = 'O';
         }
         function IniciarJogo() {
             var xhttp = new XMLHttpRequest();
